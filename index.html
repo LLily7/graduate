@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<script src="utils/vue.js"></script>
+<body>
+    <div id="index-app">
+        {{ message }}
+       <ul>
+           <li v-for="value in user">
+                <p>年龄： {{value.age}}</p>
+                <p>性别： {{value.sex}}</p>
+           </li>
+       </ul>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>
